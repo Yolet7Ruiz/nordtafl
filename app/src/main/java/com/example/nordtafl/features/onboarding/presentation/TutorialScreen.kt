@@ -1,4 +1,4 @@
-package com.nordtafl.features.onboarding.presentation
+package com.example.nordtafl.features.onboarding.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

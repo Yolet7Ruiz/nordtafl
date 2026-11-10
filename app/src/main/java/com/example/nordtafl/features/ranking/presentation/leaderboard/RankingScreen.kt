@@ -1,4 +1,4 @@
-package com.nordtafl.features.ranking.presentation.leaderboard
+package com.example.nordtafl.features.ranking.presentation.leaderboard
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -48,7 +48,7 @@ fun RankingScreen(
                 Text("← VOLVER", color = Color(0xFF8A90A2))
             }
             Text(
-                text = "CLASIFFICACIÓN ELO",
+                text = "CLASIFICACIÓN ELO",
                 color = Color(0xFFD4AF37),
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,

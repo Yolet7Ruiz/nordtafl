@@ -4,8 +4,6 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-
-// Imports con las rutas reales observadas en tu árbol de carpetas
 import com.example.nordtafl.features.splash.presentation.SplashScreen
 import com.example.nordtafl.features.onboarding.presentation.TutorialScreen
 import com.example.nordtafl.features.auth.presentation.login.LoginScreen
@@ -15,6 +13,7 @@ import com.example.nordtafl.features.game.presentation.board.GameScreen
 import com.example.nordtafl.features.history.presentation.historyList.HistoryScreen
 import com.example.nordtafl.features.ranking.presentation.leaderboard.RankingScreen
 import com.example.nordtafl.features.profile.presentation.profile.ProfileScreen
+
 
 @Composable
 fun NordTaflNavGraph() {

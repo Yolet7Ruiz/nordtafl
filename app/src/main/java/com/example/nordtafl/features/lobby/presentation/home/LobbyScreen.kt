@@ -1,4 +1,4 @@
-package com.nordtafl.features.lobby.presentation.home
+package com.example.nordtafl.features.lobby.presentation.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

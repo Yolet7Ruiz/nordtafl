@@ -1,4 +1,4 @@
-package com.nordtafl.features.game.presentation.board
+package com.example.nordtafl.features.game.presentation.board
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -20,13 +20,12 @@ import androidx.compose.ui.unit.sp
 enum class PieceType { KING, DEFENDER, ATTACKER }
 
 @Composable
-fun GameBoardScreen(
+fun GameScreen(
     onLeaveGame: () -> Unit = {}
 ) {
     var selectedTile by remember { mutableStateOf<Pair<Int, Int>?>(null) }
     var showAssistantOverlay by remember { mutableStateOf(false) }
 
-    // Representación simplificada de la cuadrícula 11x11 de Hnefatafl
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -72,7 +71,7 @@ fun GameBoardScreen(
                             val isThrone = row == 5 && col == 5
                             val isSelected = selectedTile == Pair(row, col)
 
-                            // Simulación de Fichas (Rey al centro, Defensores e Atacantes)
+                            // Simulación de Fichas (Rey al centro, Defensores y Atacantes)
                             val piece = when {
                                 isThrone -> PieceType.KING
                                 (row in 3..7 && col in 3..7) && !(row == 3 && col == 3) && !(row == 7 && col == 7) -> PieceType.DEFENDER
@@ -125,7 +124,7 @@ fun GameBoardScreen(
             }
         }
 
-        // ASISTENTE DE IA EXPLICABLE (OVERLAY / PANEL INFERIOR)
+        // ASISTENTE DE IA EXPLICABLE (PANEL INFERIOR)
         Card(
             colors = CardDefaults.cardColors(containerColor = Color(0xFF1A1D24)),
             border = ButtonDefaults.outlinedButtonBorder.copy(brush = androidx.compose.ui.graphics.SolidColor(Color(0xFFD4AF37))),

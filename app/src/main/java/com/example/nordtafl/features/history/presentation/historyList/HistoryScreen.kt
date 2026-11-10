@@ -1,4 +1,4 @@
-package com.nordtafl.features.history.presentation.historyList
+package com.example.nordtafl.features.history.presentation.historyList
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

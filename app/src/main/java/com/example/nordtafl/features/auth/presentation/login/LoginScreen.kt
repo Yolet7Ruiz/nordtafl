@@ -1,4 +1,4 @@
-package com.nordtafl.features.auth.presentation.login
+package com.example.nordtafl.features.auth.presentation.login
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

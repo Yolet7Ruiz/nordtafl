@@ -1,9 +1,7 @@
-package com.nordtafl.features.auth.presentation.otp
+package  com.example.nordtafl.features.auth.presentation.login
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
